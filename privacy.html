@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — BJJ AI</title>
+<style>
+:root { --ink:#0f1115; --muted:#5b6270; --rule:#e5e7eb; --bg:#ffffff; --card:#f7f8fa; }
+body { margin:0; background:var(--bg); color:var(--ink);
+  font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+.wrap { max-width:760px; margin:0 auto; padding:40px 24px 80px; }
+h1 { font-size:30px; letter-spacing:-.02em; margin:0 0 6px; }
+h2 { font-size:20px; margin:36px 0 10px; letter-spacing:-.01em; }
+p, li { color:var(--ink); }
+.lede { color:var(--muted); margin:0 0 28px; font-size:15px; }
+.card { background:var(--card); border:1px solid var(--rule); border-radius:12px; padding:18px 20px; margin:16px 0; }
+ul { padding-left:22px; } li { margin:6px 0; }
+a { color:#c8102e; text-decoration:none; } a:hover { text-decoration:underline; }
+.foot { margin-top:40px; padding-top:18px; border-top:1px solid var(--rule); color:var(--muted); font-size:13px; }
+.pill { display:inline-block; background:#c8102e; color:#fff; font-size:12px; font-weight:700;
+  padding:3px 10px; border-radius:999px; letter-spacing:.04em; text-transform:uppercase; }
+table { width:100%; border-collapse:collapse; margin:14px 0; font-size:15px; }
+th, td { text-align:left; padding:10px 12px; border-bottom:1px solid var(--rule); vertical-align:top; }
+th { background:var(--card); font-weight:600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<span class="pill">Effective July 25, 2026</span>
+<h1>Privacy Policy</h1>
+<p class="lede">This policy explains how BJJ AI collects, uses, and protects your information when you use the BJJ AI mobile application (the &ldquo;App&rdquo;). By creating an account and using the App, you agree to the practices described here.</p>
+
+<div class="card">
+  <strong>Short version:</strong> BJJ AI stores your training profile, logged sessions, video analyses, and AI coach history on your device and in your personal iCloud account. We do not sell your data, run targeted ads, or install third-party tracking SDKs. The only external services that receive your data are Apple (for authentication, iCloud sync, and subscriptions) and our AI model providers (for analysis and coaching), each described below.
+</div>
+
+<h2>1. Information We Collect</h2>
+
+<h3>1.1 Account information</h3>
+<ul>
+  <li><strong>Sign in with Apple:</strong> If you sign in with Apple, Apple provides us with a stable user identifier, and (if you choose to share it) your name and email. Your Apple ID password is never shared with us.</li>
+  <li><strong>Email/password accounts:</strong> If you create a local account, we store the username, email, and a password hash on your device using the iOS Keychain. These credentials never leave your device.</li>
+  <li><strong>Optional profile fields:</strong> First name, last name, date of birth, height, weight, belt rank, experience level, training style, positions, submissions, takedowns, injuries, and free-text goals. These are used to personalize AI coaching and are stored on-device and in your iCloud account (see Section 3).</li>
+</ul>
+
+<h3>1.2 Training and coaching data</h3>
+<ul>
+  <li><strong>Training sessions</strong> you log (date, duration, type, techniques, notes, intensity).</li>
+  <li><strong>Video analyses</strong> &mdash; when you analyze a roll, we extract still frames from your video and send them to our AI provider for analysis (see Section 4). The original video is not uploaded; only sampled frames.</li>
+  <li><strong>AI Coach conversations</strong> and generated lessons.</li>
+  <li><strong>Coach memory</strong> &mdash; a rolling summary of your recent activity used to keep coaching personalized.</li>
+  <li><strong>Progress statistics</strong> &mdash; XP, streaks, milestones, and drill history.</li>
+</ul>
+
+<h3>1.3 Photos and camera</h3>
+<ul>
+  <li><strong>Profile photo</strong> &mdash; if you choose to add one. Stored locally on your device only (not synced to iCloud).</li>
+  <li><strong>Camera recording</strong> &mdash; used when you record training footage directly in the App for analysis. Frames are sent to the AI provider; the full recording is processed on-device and is not uploaded.</li>
+  <li><strong>Photos library</strong> &mdash; accessed only when you select a video or photo for analysis, with your permission.</li>
+</ul>
+
+<h3>1.4 Microphone</h3>
+<ul>
+  <li>Used for the dictation feature (speech-to-text) when composing notes or coach messages. Audio is processed by Apple&rsquo;s on-device speech recognition framework and is not sent to our servers.</li>
+</ul>
+
+<h3>1.5 What we do <em>not</em> collect</h3>
+<ul>
+  <li>Precise GPS location.</li>
+  <li>Contacts, calendar, or social graph.</li>
+  <li>Browsing history or cross-app activity.</li>
+  <li>We do not integrate any third-party advertising or analytics SDKs (no Firebase, no AdMob, no Facebook SDK). No behavioral tracking occurs.</li>
+</ul>
+
+<h2>2. How We Use Your Information</h2>
+<ul>
+  <li>To create and manage your account and session.</li>
+  <li>To provide personalized AI coaching, video analysis, and lesson generation.</li>
+  <li>To sync your training data across your Apple devices via iCloud.</li>
+  <li>To verify subscription status and grant access to premium features.</li>
+  <li>To display your progress, streaks, and coach memory inside the App.</li>
+</ul>
+
+<h2>3. Where Your Data Is Stored</h2>
+<table>
+  <tr><th>Data type</th><th>Where it lives</th><th>Synced to iCloud?</th></tr>
+  <tr><td>Account credentials</td><td>Apple Keychain (on-device, encrypted)</td><td>No (device-local, by design)</td></tr>
+  <tr><td>Athlete profile</td><td>On-device + iCloud Key-Value Store</td><td>Yes</td></tr>
+  <tr><td>Training sessions, analyses, lessons, coach conversations, milestones, XP</td><td>CloudKit-backed local store + iCloud</td><td>Yes</td></tr>
+  <tr><td>Coach memory &amp; focus areas</td><td>iCloud Key-Value Store (with on-device fallback)</td><td>Yes</td></tr>
+  <tr><td>Profile photo</td><td>On-device only</td><td>No</td></tr>
+  <tr><td>Subscription status</td><td>Apple&rsquo;s App Store (via StoreKit)</td><td>Managed by Apple</td></tr>
+</table>
+<p>iCloud sync requires that you are signed in to the same Apple ID on each device and have iCloud enabled for BJJ AI in Settings &rarr; [Your Name] &rarr; iCloud &rarr; Apps Using iCloud. If iCloud is unavailable, the App continues to work with on-device storage only.</p>
+
+<h2>4. Third-Party Services</h2>
+
+<h3>4.1 Apple</h3>
+<ul>
+  <li><strong>Sign in with Apple</strong> &mdash; authenticates your identity without sharing your real Apple ID password with us.</li>
+  <li><strong>iCloud / CloudKit</strong> &mdash; syncs your data across your own Apple devices. Your data lives in your private iCloud database; only you can read it.</li>
+  <li><strong>StoreKit / App Store</strong> &mdash; processes subscription purchases and renewals. Payment is handled entirely by Apple; we never see your card or bank details.</li>
+</ul>
+
+<h3>4.2 AI model providers</h3>
+<p>To generate video analyses, lessons, and coaching responses, the App sends the following to our AI provider through our secure proxy:</p>
+<ul>
+  <li>Up to six down-sampled still frames (max 640px, JPEG quality ~50%) extracted from your video.</li>
+  <li>Your athlete profile context (belt, style, positions, injuries, goals).</li>
+  <li>Your recent coach memory summary.</li>
+  <li>The specific question or analysis mode you selected.</li>
+</ul>
+<p>The full video is never uploaded. Processing follows each provider&rsquo;s data retention policy; we select providers that do not use customer inputs to train their models.</p>
+
+<h3>4.3 Rork Auth (Sign in with Apple relay)</h3>
+<p>The OAuth token exchange for Sign in with Apple is relayed through Rork&rsquo;s authentication service, which issues and stores encrypted access/refresh tokens in your device&rsquo;s Keychain. The relay sees your Apple user identifier and (if shared) your email; it does not see your password.</p>
+
+<h2>5. Data Sharing and Selling</h2>
+<p>We do <strong>not</strong> sell, rent, or trade your personal information. We do not share your data with third parties for advertising. Data is shared only with the services listed in Section 4, strictly as needed to operate the App&rsquo;s features.</p>
+
+<h2>6. Data Retention and Deletion</h2>
+<ul>
+  <li><strong>In-app:</strong> You can delete your account at any time from Profile &rarr; Account &rarr; Delete Account. This removes your local account, credentials, and on-device data immediately.</li>
+  <li><strong>iCloud:</strong> Deleting your account does not automatically delete data already synced to your iCloud account. To remove synced data, sign out of iCloud or disable iCloud for BJJ AI in Settings &rarr; [Your Name] &rarr; iCloud &rarr; Apps Using iCloud.</li>
+  <li><strong>AI providers:</strong> Frames and prompts sent for analysis are processed transiently; we do not maintain a separate server-side archive of your AI inputs.</li>
+</ul>
+
+<h2>7. Your Privacy Rights</h2>
+<p>Depending on your jurisdiction (e.g., California, the EU/UK, and other regions with privacy laws), you may have the right to:</p>
+<ul>
+  <li>Know what personal data we hold and how we use it.</li>
+  <li>Request access to or a copy of your data.</li>
+  <li>Request correction or deletion of your data.</li>
+  <li>Opt out of any &ldquo;sale&rdquo; or &ldquo;sharing&rdquo; of personal data (we do not engage in either).</li>
+</ul>
+<p>Because your training data is stored on your device and in your personal iCloud account, you have direct control: deleting the App, deleting your account, or managing iCloud settings exercises these rights without needing to contact us. For other requests, email the address in Section 10.</p>
+
+<h2>8. Children&rsquo;s Privacy</h2>
+<p>BJJ AI is intended for users 13 years and older. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with information, contact us and we will delete it.</p>
+
+<h2>9. Security</h2>
+<p>Credentials are stored in the iOS Keychain, encrypted by Apple. Data synced through iCloud is transmitted over HTTPS and stored in your private CloudKit database. AI requests are sent over HTTPS to our proxy. No method of transmission or storage is fully secure, but we rely on Apple&rsquo;s platform security to protect your data.</p>
+
+<h2>10. Contact Us</h2>
+<p>Questions about this policy or your data? Email <a href="mailto:support@bjjaiapp.com">support@bjjaiapp.com</a>.</p>
+
+<h2>11. Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time. Material changes will be reflected by updating the &ldquo;Effective&rdquo; date above. Continued use of the App after a change constitutes acceptance of the updated policy.</p>
+
+<div class="foot">
+  BJJ AI &mdash; AI Brazilian Jiu-Jitsu coach and training companion. &copy; 2026. All rights reserved.
+</div>
+
+</div>
+</body>
+</html
