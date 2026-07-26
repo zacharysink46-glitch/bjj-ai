@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BJJ AI — Legal</title>
+<style>
+  :root {
+    --bg: #0b0f1a;
+    --surface: #131a2b;
+    --accent: #e63946;
+    --text: #e8eaf0;
+    --muted: #9aa3b8;
+    --border: #232c42;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: radial-gradient(1200px 600px at 50% -10%, #1a2336 0%, var(--bg) 60%);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 20px;
+  }
+  .container { max-width: 640px; width: 100%; }
+  .logo {
+    width: 84px; height: 84px; border-radius: 20px;
+    background: linear-gradient(135deg, var(--accent), #b71d2c);
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 24px;
+    box-shadow: 0 12px 40px rgba(230, 57, 70, 0.35);
+  }
+  .logo svg { width: 48px; height: 48px; }
+  h1 { font-size: 30px; font-weight: 800; text-align: center; letter-spacing: -0.5px; }
+  .tagline { color: var(--muted); text-align: center; margin-top: 8px; font-size: 15px; }
+  .cards { margin-top: 40px; display: flex; flex-direction: column; gap: 16px; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px 22px;
+    text-decoration: none;
+    color: var(--text);
+    transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+  }
+  .card:hover { transform: translateY(-2px); border-color: var(--accent); background: #16203a; }
+  .card-title { font-size: 18px; font-weight: 700; }
+  .card-desc { color: var(--muted); font-size: 14px; margin-top: 6px; line-height: 1.5; }
+  .card-arrow { color: var(--accent); font-size: 18px; margin-top: 14px; display: block; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 12px; text-align: center; }
+  a.support { color: var(--accent); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="logo" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2L3 20h18L12 2z" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/>
+      <circle cx="12" cy="13" r="2.4" fill="#fff"/>
+    </svg>
+  </div>
+  <h1>BJJ AI</h1>
+  <p class="tagline">Your pocket BJJ coach — legal documents</p>
+
+  <div class="cards">
+    <a class="card" href="privacy">
+      <div class="card-title">Privacy Policy</div>
+      <div class="card-desc">How BJJ AI collects, uses, and protects your data — including Sign in with Apple, iCloud sync, StoreKit subscriptions, and AI processing.</div>
+      <span class="card-arrow">Read &rarr;</span>
+    </a>
+    <a class="card" href="terms">
+      <div class="card-title">Terms of Service</div>
+      <div class="card-desc">The terms governing your use of BJJ AI, including subscription billing, auto-renewal, trial, and acceptable use.</div>
+      <span class="card-arrow">Read &rarr;</span>
+    </a>
+  </div>
+
+  <footer>
+    Effective July 25, 2026 &middot;
+    Contact: <a class="support" href="mailto:support@bjjaiapp.com">support@bjjaiapp.com</a>
+  </footer>
+</div>
+</body>
+</html>
